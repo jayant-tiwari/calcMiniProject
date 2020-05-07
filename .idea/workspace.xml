@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d59f6b39-fa0f-45be-932e-8fc8c909cc72" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +59,7 @@
       <option name="presentableId" value="Default" />
       <updated>1588828820997</updated>
       <workItem from="1588828826417" duration="8177000" />
-      <workItem from="1588866330676" duration="498000" />
+      <workItem from="1588866330676" duration="1564000" />
     </task>
     <servers />
   </component>
