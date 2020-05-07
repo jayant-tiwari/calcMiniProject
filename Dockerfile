@@ -1,4 +1,5 @@
 FROM openjdk:8
-MAINTAINER 30071997 jayant.tiwari@iiitb.org
-COPY ./target/calculator-devops-1.0-SNAPSHOT-jar-with-dependencies.jar ./
-CMD ["java -jar calculator-devops-1.0-SNAPSHOT-jar-with-dependencies.jar"]
+MAINTAINER JayantTiwari jayant.tiwari@iiitb.org
+COPY ./target/calculatorMiniProject-1.0-SNAPSHOT-jar-with-dependencies.jar ./
+WORKDIR ./
+CMD ["java -jar calculatorMiniProject-1.0-SNAPSHOT-jar-with-dependencies.jar"]
