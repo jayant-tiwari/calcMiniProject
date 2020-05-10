@@ -31,21 +31,21 @@ public class Calculator {
                     System.out.println("Second number:");
                     num2= sc.nextDouble();
                     System.out.println("Result after substraction is: "+ calc.substract(num1,num2));
-
+                    break;
                 case 3:
                     System.out.println("First number:");
                     num1= sc.nextDouble();
                     System.out.println("Second number:");
                     num2= sc.nextDouble();
                     System.out.println("Result after multiplication is: "+ calc.multiply(num1,num2));
-
+                    break;
                 case 4:
                     System.out.println("Enter numerator:");
                     num1= sc.nextDouble();
                     System.out.println("Enter denominator:");
                     num2= sc.nextDouble();
                     System.out.println("Result after division is: "+ calc.divide(num1,num2));
-
+                    break;
                 default:
                     shouldexit=true;
                     System.out.println("Exiting");
@@ -58,25 +58,25 @@ public class Calculator {
 
     public double add(double num1,double num2)
     {
-//        logger.info("Performing addition of " + num1 + " , " + num2);
+        logger.info("Performing addition of " + num1 + " , " + num2);
         double result = num1+num2;
-//        logger.info("Addition Result" + result);
+        logger.info("Addition Result" + result);
         return result;
     }
 
     public double substract(double num1,double num2)
     {
-//        logger.info("Performing Subtraction of " + num1 + " , " + num2);
+        logger.info("Performing Subtraction of " + num1 + " , " + num2);
         double result = num1-num2;
-//        logger.info("Substraction result " + result);
+        logger.info("Substraction result " + result);
         return result;
     }
 
     public double multiply(double num1,double num2)
     {
-//        logger.info("Performing Multiplication " + num1 + " , " + num2);
+        logger.info("Performing Multiplication " + num1 + " , " + num2);
         double result = num1*num2;
-//        logger.info("Multiplication Result " + result);
+        logger.info("Multiplication Result " + result);
         return result;
     }
 
@@ -84,13 +84,13 @@ public class Calculator {
     {
 
         double result;
-//        logger.info("Dividing " + num1 + " by " + num2);
+        logger.info("Dividing " + num1 + " by " + num2);
         if (num2 == 0) {
-//            logger.info("Divide by Zero Exception");
+            logger.info("Divide by Zero Exception");
             throw new IllegalArgumentException("Divisor cannot divide by zero");
         } else {
             result = num1/num2;
-//            logger.info("Division Result " + result);
+            logger.info("Division Result " + result);
         }
         return result;
     }
