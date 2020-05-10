@@ -2,6 +2,7 @@ import calculatorApp.Calculator;
 import org.junit.*;
 import static org.junit.Assert.*;
 public class CalculatorTests {
+    private static final double DELTA = 1e-15;
     private Calculator calc;
 
     @Before
@@ -16,7 +17,7 @@ public class CalculatorTests {
         double num2 = 5;
         double expectedResult = 7;
         double result = calc.add(num1,num2);
-        assertEquals(expectedResult,result);
+        assertEquals(expectedResult,result,DELTA);
     }
 
     @Test
@@ -27,7 +28,7 @@ public class CalculatorTests {
         double num2 = 2;
         double expectedResult = 7;
         double result = calc.substract(num1,num2);
-        assertEquals(expectedResult,result);
+        assertEquals(expectedResult,result,DELTA);
     }
 
     @Test
@@ -37,7 +38,7 @@ public class CalculatorTests {
         double num2 = 15;
         double expectedResult = 30;
         double result = calc.multiply(num1,num2);
-        assertEquals(expectedResult,result);
+        assertEquals(expectedResult,result,DELTA);
     }
 
     @Test
@@ -47,7 +48,7 @@ public class CalculatorTests {
         double num2 = 2;
         double expectedResult = 7;
         double result = calc.divide(num1,num2);
-        assertEquals(expectedResult,result);
+        assertEquals(expectedResult,result,DELTA);
     }
 
     @Test(expected = IllegalArgumentException.class)
