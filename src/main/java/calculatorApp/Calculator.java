@@ -23,7 +23,7 @@ public class Calculator {
                     num1= sc.nextDouble();
                     System.out.println("Second number:");
                     num2= sc.nextDouble();
-                    System.out.println("Result after addition is: "+ calc.add(num1,num2));
+                    System.out.println("Result after addition is as follows: "+ calc.add(num1,num2));
                     break;
                 case 2:
                     System.out.println("First number:");
